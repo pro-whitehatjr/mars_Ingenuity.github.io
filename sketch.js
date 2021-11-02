@@ -25,6 +25,7 @@ function setup()
 
   //landing zone
   var lz = createSprite(100,490,150,20);
+  lz.shapeColor = "red";
  
 }
 
@@ -32,6 +33,14 @@ function draw()
 {
   background(200);
   image(bg_img,0,0,800,500);
+  
+  push()
+  textSize(11);
+  fill(255);
+  text("Use arrow keys to control the Ingenuity",600,20);
+  text("land on the Landing zone",600,40);
+  pop();
+  
   push();
   textSize(30);
   fill(255);
